@@ -1,0 +1,17 @@
+<ul>
+  <li>
+    <a [ngClass]="{ active: currentPage === '/home' || currentPage === '/' }" (click)="navigate('/home')" routerLink="/home">
+      home
+    </a>
+  </li>
+  <li>
+    <a [ngClass]="{ active: currentPage === '/login' }" (click)="navigate('/login')" routerLink="/login">
+      login
+    </a>
+  </li>
+  <li>
+    <a [ngClass]="{ active: currentPage === '/trying-a-fake-root' }" (click)="navigate('/fake')" routerLink="/trying-a-fake-root">
+      fake
+    </a>
+  </li>
+</ul>
