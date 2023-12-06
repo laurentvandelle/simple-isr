@@ -1,5 +1,5 @@
 {
-  "name": "simple-ssr",
+  "name": "simple-isr",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run simple-ssr:serve-ssr",
-    "serve:ssr": "node dist/simple-ssr/server/main.js",
-    "build:ssr": "ng build && ng run simple-ssr:server",
-    "prerender": "ng run simple-ssr:prerender"
+    "dev:ssr": "ng run simple-isr:serve-ssr",
+    "serve:ssr": "node dist/simple-isr/server/main.js",
+    "build:ssr": "ng build && ng run simple-isr:server",
+    "prerender": "ng run simple-isr:prerender"
   },
   "private": true,
   "browser": {

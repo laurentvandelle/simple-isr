@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "simple-ssr": {
+    "simple-isr": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/simple-ssr/browser",
+            "outputPath": "dist/simple-isr/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "simple-ssr:build:production"
+              "browserTarget": "simple-isr:build:production"
             },
             "development": {
-              "browserTarget": "simple-ssr:build:development"
+              "browserTarget": "simple-isr:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "simple-ssr:build"
+            "browserTarget": "simple-isr:build"
           }
         },
         "test": {
@@ -92,7 +92,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/simple-ssr/server",
+            "outputPath": "dist/simple-isr/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss",
@@ -118,12 +118,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "simple-ssr:build:development",
-              "serverTarget": "simple-ssr:server:development"
+              "browserTarget": "simple-isr:build:development",
+              "serverTarget": "simple-isr:server:development"
             },
             "production": {
-              "browserTarget": "simple-ssr:build:production",
-              "serverTarget": "simple-ssr:server:production"
+              "browserTarget": "simple-isr:build:production",
+              "serverTarget": "simple-isr:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -135,12 +135,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "simple-ssr:build:production",
-              "serverTarget": "simple-ssr:server:production"
+              "browserTarget": "simple-isr:build:production",
+              "serverTarget": "simple-isr:server:production"
             },
             "development": {
-              "browserTarget": "simple-ssr:build:development",
-              "serverTarget": "simple-ssr:server:development"
+              "browserTarget": "simple-isr:build:development",
+              "serverTarget": "simple-isr:server:development"
             }
           },
           "defaultConfiguration": "production"
