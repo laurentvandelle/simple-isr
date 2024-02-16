@@ -14,7 +14,6 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     HttpClientModule,
     CoreModule,
-    IsrModule.forRoot(),
   ],
   // providers: [provideISR()],
   bootstrap: [AppComponent],
